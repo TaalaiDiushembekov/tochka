@@ -28,7 +28,7 @@ const Level = () => {
                               <ChatBubbleIcon style={{ color: "white", fontSize: 60  }} />
                           </div>
                           <p>
-                              Учёт, отчётность и обработку документов
+                              Общение с налоговой
                           </p>
                       </div>
                       <div className="level-three">
@@ -36,7 +36,7 @@ const Level = () => {
                               <ExposureIcon style={{ color: "white", fontSize: 60  }} />
                           </div>
                           <p>
-                              Учёт, отчётность и обработку документов
+                              Расчёт налогов и зарплат
                           </p>
                       </div>
                       <div className="level-three">
@@ -44,7 +44,7 @@ const Level = () => {
                               <PollIcon style={{ color: "white", fontSize: 60  }} />
                           </div>
                           <p>
-                              Учёт, отчётность и обработку документов
+                              Баланс и декларации
                           </p>
                       </div>
                   </div>

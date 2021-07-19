@@ -11,7 +11,7 @@ const Service = () => {
                     <CheckCircleIcon style={{color: 'green'}}/>
                 </div>
 
-                <p>Бухгалтерские услуг</p>
+                <p>Бухгалтерских услуг</p>
             </div>
             <div className="service-box">
                 <div className="service-icon">

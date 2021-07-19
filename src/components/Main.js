@@ -5,7 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring'; // web.cjs is required for IE 11 support
-
+import mainPhoto from '../images/бухгалтер.jpg'
+import Container from "@material-ui/core/Container";
 
 
 
@@ -65,44 +66,51 @@ const Main = () => {
         setOpen(false);
     };
     return (
-        <div className="main">
-          <h2>Точка — это свобода</h2>
-          <h3 className="main2">от бухгалтерии</h3>
-          {/*<h3 className="main3">от обработки документов</h3>*/}
-          {/*<h3 className="main4">от подсчёта налогов</h3>*/}
-          {/*<h3 className="main5">от сдачи отчётности</h3>*/}
-            <p>Предпринимательская жизнь — это не только бизнес, но и семья, и спорт, и отпуск, и встречи с друзьями.
-                <br></br>
-                <br></br>
-                Поэтому мы берём на себя учёт, отчётность, расчёт налогов и зарплаты, юридические вопросы, работу с банками, чтобы вы стали свободнее!</p>
-            <button className="button-left">Попробовать бесплатно</button>
-            <button className="button-right"  type="button" onClick={handleOpen}>Перезвоните мне</button>
-            <Modal
-                aria-labelledby="spring-modal-title"
-                aria-describedby="spring-modal-description"
-                className={classes.modal}
-                open={open}
-                onClose={handleClose}
-                closeAfterTransition
-                BackdropComponent={Backdrop}
-                BackdropProps={{
-                    timeout: 500,
-                }}
-            >
-                <Fade in={open}>
-                    <div className={classes.paper}>
-                        <h2 id="spring-modal-title">Насрединова Валентина</h2>
-                        <p id="spring-modal-description">
-                        <div className="main-icon">
-                            <div className="main-iconPhone"><PhoneIcon style={{ color: "white"}}/></div>
-                            <div className="main-phone">0555458626</div>
-                        </div>
+        <div className="main-first">
+            <Container>
+                <div className="main">
+                    <h2>Точка — это свобода</h2>
+                    <h3 className="main2">от бухгалтерии</h3>
+                    {/*<h3 className="main3">от обработки документов</h3>*/}
+                    {/*<h3 className="main4">от подсчёта налогов</h3>*/}
+                    {/*<h3 className="main5">от сдачи отчётности</h3>*/}
+                    <p>Предпринимательская жизнь — это не только бизнес, но и семья, и спорт, и отпуск, и встречи с друзьями.
+                        <br></br>
+                        <br></br>
+                        Поэтому мы берём на себя учёт, отчётность, расчёт налогов и зарплаты, юридические вопросы, работу с банками, чтобы вы стали свободнее!</p>
+                    <button className="button-left">Попробовать бесплатно</button>
+                    <button className="button-right"  type="button" onClick={handleOpen}>Перезвоните мне</button>
+                    <Modal
+                        aria-labelledby="spring-modal-title"
+                        aria-describedby="spring-modal-description"
+                        className={classes.modal}
+                        open={open}
+                        onClose={handleClose}
+                        closeAfterTransition
+                        BackdropComponent={Backdrop}
+                        BackdropProps={{
+                            timeout: 500,
+                        }}
+                    >
+                        <Fade in={open}>
+                            <div className={classes.paper}>
+                                <h2 id="spring-modal-title">Насрединова Валентина</h2>
+                                <p id="spring-modal-description">
+                                    <div className="main-icon">
+                                        <div className="main-iconPhone"><PhoneIcon style={{ color: "white"}}/></div>
+                                        <div className="main-phone">0555458626</div>
+                                    </div>
 
-                        </p>
-                    </div>
-                </Fade>
-            </Modal>
-        </div>
+                                </p>
+                            </div>
+                        </Fade>
+                    </Modal>
+                </div>
+            </Container>
+             {/*<div className="main-second">*/}
+             {/* <img src={mainPhoto}/>*/}
+             {/*</div>*/}
+         </div>
     );
 };
 
